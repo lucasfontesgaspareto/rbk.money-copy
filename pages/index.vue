@@ -178,14 +178,61 @@
           </div>
         </div>
       </section>
+
+      <section class="bg-white Wave__section h-screen">
+        <div class="relative w-full h-full">
+          <wave class="absolute swell opacity-50 z-10"></wave>
+          <wave class="absolute swell intercale opacity-75 z-20"></wave>
+          <wave class="absolute swell intercale2 opacity-25 z-30"></wave>
+          <wave class="absolute z-40"></wave>
+          <div class="relative text-white z-50">
+            <div class="flex h-full px-40 py-20">
+              <div class="w-1/2 p-10">
+                <h1 class="text-5xl font-medium my-4">Market Solutions</h1>
+                <p class="font-light mb-10">
+                  We offer safe and reliable technologies for accepting all
+                  types of payments in different business areas. Our solutions
+                  are designed to meet the characteristics and requirements of
+                  each industry.
+                </p>
+                <a
+                  href="#"
+                  class="shadow-xl rounded-full mx-4 py-4 px-8 bg-rbk-green font-medium text-base align-bottom leading-normal"
+                >
+                  Fint out solutions
+                </a>
+              </div>
+              <div class="w-1/2 p-10">
+                <div class="bg-white p-10 my-10 rounded-lg shadow relative">
+                  <h2 class="text-3xl font-medium text-rbk-marine my-4">
+                    One сontract for all MOPs
+                  </h2>
+                  <p class="font-light text-rbk-marine">
+                    RBK.money has licenses of the Central Bank of Russia and the
+                    FCA UK. Receive payments and work with customers in Russia
+                    other countries with out limits.
+                  </p>
+                  <button
+                    class="absolute rounded-full w-10 h-10 bg-rbk-green text-4xl font-bold"
+                    style="right: -2.5rem; top: 50%; transform: translate(-50%);"
+                  >
+                    ^
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </template>
 
 <script>
 import RbkMoneyLogo from '@/components/RbkMoneyLogo'
+import Wave from '@/components/Wave'
 export default {
-  components: { RbkMoneyLogo },
+  components: { RbkMoneyLogo, Wave },
   data() {
     return {
       top: 0
@@ -197,11 +244,8 @@ export default {
       this.top = Math.floor(window.scrollY/100) * 5
     }
   },
-  created () {
+  mounted () {
     window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
@@ -210,13 +254,14 @@ export default {
 @keyframes swell {
   0%,
   100% {
-    transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -10px, 0);
   }
   50% {
     transform: translate3d(0, 15px, 0);
   }
 }
 
+/* Hero Section */
 .Hero__section,
 .Hero__section::before,
 .Hero__section::after {
@@ -247,6 +292,7 @@ export default {
   opacity: 0.1;
 }
 
+/* Card Section */
 .Card__section {
   box-shadow: 0 10px 29px hsla(222, 100%, 68%, 0.22);
   @apply p-10;
@@ -266,24 +312,29 @@ export default {
   @apply absolute;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
+/* Wave Section */
+.Wave__section .swell {
+  animation: swell 7s ease -1.25s infinite;
+}
+.Wave__section .swell.intercale {
+  animation: swell 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+.Wave__section .swell.intercale-2 {
+  animation: swell 7s ease-out infinite;
 }
 
-/* Track */
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
 ::-webkit-scrollbar-track {
   @apply bg-rbk-blue;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.5);
   @apply rounded-full;
   @apply mx-2;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-rbk-green;
 }

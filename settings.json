@@ -1,0 +1,24 @@
+{
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": false,
+  "vetur.validation.template": false,
+  "eslint.alwaysShowStatus": true,
+  "files.autoGuessEncoding": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n"
+}
