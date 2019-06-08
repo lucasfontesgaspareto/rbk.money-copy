@@ -30,6 +30,7 @@
         <a href="#" class="p-8">RU</a>
       </header>
     </div>
+
     <main class="overflow-hidden">
       <section class="Hero__section p-40 text-white">
         <div class="container h-full mx-auto flex">
@@ -60,7 +61,8 @@
           </div>
         </div>
       </section>
-      <section class="p-40">
+
+      <section class="px-40">
         <div class="container mx-auto">
           <h1 class="text-5xl font-medium text-rbk-marine my-20">
             Wider Opportunities with RBK.money
@@ -179,17 +181,17 @@
         </div>
       </section>
 
-      <section class="bg-white Wave__section h-screen">
+      <section class="bg-white h-screen">
         <div class="relative w-full h-full">
           <wave class="absolute swell opacity-50 z-10"></wave>
           <wave class="absolute swell intercale opacity-75 z-20"></wave>
           <wave class="absolute swell intercale2 opacity-25 z-30"></wave>
           <wave class="absolute z-40"></wave>
           <div class="relative text-white z-50">
-            <div class="flex h-full px-40 py-20">
-              <div class="w-1/2 p-10">
+            <div class="flex h-full p-40">
+              <div class="w-1/2">
                 <h1 class="text-5xl font-medium my-4">Market Solutions</h1>
-                <p class="font-light mb-10">
+                <p class="font-light mb-16">
                   We offer safe and reliable technologies for accepting all
                   types of payments in different business areas. Our solutions
                   are designed to meet the characteristics and requirements of
@@ -197,28 +199,131 @@
                 </p>
                 <a
                   href="#"
-                  class="shadow-xl rounded-full mx-4 py-4 px-8 bg-rbk-green font-medium text-base align-bottom leading-normal"
+                  class="shadow-xl rounded-full py-4 px-8 bg-rbk-green font-medium text-base align-bottom leading-normal"
                 >
                   Fint out solutions
                 </a>
               </div>
-              <div class="w-1/2 p-10">
-                <div class="bg-white p-10 my-10 rounded-lg shadow relative">
-                  <h2 class="text-3xl font-medium text-rbk-marine my-4">
-                    One сontract for all MOPs
+              <div class="w-1/3 mx-auto">
+                <div class="bg-white p-10 my-10 rounded-lg shadow-xl relative">
+                  <h2 class="text-3xl font-medium text-rbk-marine mb-4">
+                    Online-Retail
                   </h2>
                   <p class="font-light text-rbk-marine">
-                    RBK.money has licenses of the Central Bank of Russia and the
-                    FCA UK. Receive payments and work with customers in Russia
-                    other countries with out limits.
+                    Online stores can set up retention payments (holding
+                    payments) which is useful when the confirmation of the
+                    availability of products in its warehouse is needed.
                   </p>
                   <button
-                    class="absolute rounded-full w-10 h-10 bg-rbk-green text-4xl font-bold"
-                    style="right: -2.5rem; top: 50%; transform: translate(-50%);"
+                    class="absolute rounded-full w-16 h-16 bg-rbk-green text-4xl font-bold shadow-xl"
+                    style="right: -2rem; top: 50%; transform: translateY(-50%);"
                   >
-                    ^
+                    <img src="chevron-small-down.svg" alt="next" />
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-40">
+        <div class="container mx-auto">
+          <div class="flex flex-row justify-between">
+            <div class="flex w-1/2 mr-4 flex-col">
+              <h2 class="text-5xl font-medium text-rbk-marine my-4">
+                Rates with no Hidden Fee
+              </h2>
+              <h3 class="text-xl font-medium text-rbk-marine my-4">
+                Rate for companies with turnover more $ 30,000 per month
+              </h3>
+              <div class="flex w-full border-solid border-b">
+                <div class="w-3/4 text-gray-400 font-light text-md py-2">
+                  Payment methods
+                </div>
+                <div class="w-1/4 text-gray-400 font-light text-md py-2">
+                  Rate
+                </div>
+              </div>
+              <div class="flex w-full border-solid border-b">
+                <div class="w-3/4 text-rbk-marine font-light text-md py-4">
+                  Banking cards
+                </div>
+                <div class="w-1/4 text-rbk-marine font-light text-md py-4">
+                  from 2%
+                </div>
+              </div>
+              <div class="flex w-full border-solid border-b">
+                <div class="w-3/4 text-rbk-marine font-light text-md py-4">
+                  E-wallets and e-money
+                </div>
+                <div class="w-1/4 text-rbk-marine font-light text-md py-4">
+                  from 2.1%
+                </div>
+              </div>
+              <div class="flex w-full border-solid border-b">
+                <div class="w-3/4 text-rbk-marine font-light text-md py-4">
+                  Cash in payments
+                </div>
+                <div class="w-1/4 text-rbk-marine font-light text-md py-4">
+                  from 1.2%
+                </div>
+              </div>
+              <div class="flex w-full border-solid border-b">
+                <div class="w-3/4 text-rbk-marine font-light text-md py-4">
+                  Direct debit payments
+                </div>
+                <div class="w-1/4 text-rbk-marine font-light text-md py-4">
+                  from 2%
+                </div>
+              </div>
+              <div class="flex w-full">
+                <div class="w-3/4 text-rbk-marine font-light text-md py-4">
+                  Mass payouts
+                </div>
+                <div class="w-1/4 text-rbk-marine font-light text-md py-4">
+                  from 1.5%
+                </div>
+              </div>
+              <div class="flex w-full my-8">
+                <a
+                  href="#"
+                  class="shadow-xl rounded-full py-4 px-8 bg-rbk-green font-medium text-base align-bottom leading-normal text-white"
+                >
+                  Determine your rate
+                </a>
+              </div>
+            </div>
+            <div class="flex w-1/2 ml-4 flex-row flex-wrap bg-circle relative">
+              <div class="w-full text-start mx-32">
+                <div class="w-1/2">
+                  <img src="undraw_discount_d4bd.svg" alt="Discount" />
+                </div>
+                <h2 class="text-3xl font-medium text-rbk-marine mb-4">
+                  Flexible Tariffs
+                </h2>
+                <p class="font-light text-rbk-marine">
+                  RBK.money rate plans are adopted to the client's turnover: fee
+                  decreases with the growth of volumes.
+                </p>
+              </div>
+              <div
+                class="w-full mx-20 bg-white p-10 my-10 rounded-lg shadow-xl relative"
+              >
+                <h2 class="text-3xl font-medium text-rbk-marine mb-4">
+                  Personal Approach
+                </h2>
+                <p class="font-light text-rbk-marine">
+                  No matter whether a large online business or a start-up
+                  entrepreneur we chose the most favorable rate and ensure high
+                  quality service for all clients.
+                </p>
+                <a
+                  href="#"
+                  class="shadow-xl rounded-full py-4 px-8 border-solid border-2 border-rbk-green font-medium text-base align-bottom leading-normal text-rbk-green inline-block mt-8"
+                >
+                  More about pricing
+                </a>
               </div>
             </div>
           </div>
@@ -254,10 +359,10 @@ export default {
 @keyframes swell {
   0%,
   100% {
-    transform: translate3d(0, -10px, 0);
+    transform: translateY(-15px);
   }
   50% {
-    transform: translate3d(0, 15px, 0);
+    transform: translateY(15px);
   }
 }
 
@@ -313,14 +418,31 @@ export default {
 }
 
 /* Wave Section */
-.Wave__section .swell {
+.swell {
   animation: swell 7s ease -1.25s infinite;
+  top: -5px;
 }
-.Wave__section .swell.intercale {
+.swell.intercale {
   animation: swell 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  top: 0px;
 }
-.Wave__section .swell.intercale-2 {
+.swell.intercale-2 {
   animation: swell 7s ease-out infinite;
+  top: 5px;
+}
+
+.bg-circle::after {
+  content: '';
+  z-index: -1;
+  opacity: .15;
+  border-radius: 50%;
+  animation: swell 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  top: 20px;
+  @apply absolute;
+  @apply left-0;
+  @apply w-full;
+  @apply h-full;
+  @apply bg-rbk-blue;
 }
 
 /* Custom Scrollbar */

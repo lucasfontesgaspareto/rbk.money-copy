@@ -5,7 +5,7 @@
   "author": "Lucas Fontes Gaspareto",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue ./",
+    "lint": "eslint --ext .js,.vue pages/",
     "precommit": "yarn run lint",
     "dev": "nuxt",
     "build": "nuxt build",
